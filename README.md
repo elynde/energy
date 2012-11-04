@@ -1,4 +1,4 @@
-<img src="https://raw.github.com/elynde/energy/master/res/drawable-ldpi/ic_launcher.png" style="float: left; margin-right: 10px"/><h1 style="position: relative; bottom : 5px">energy</h1>
+![](https://raw.github.com/elynde/energy/master/logo.png)
 
 Simple Android app for logging your energy level throughout the day.
 
