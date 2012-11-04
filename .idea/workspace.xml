@@ -90,10 +90,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Alarm.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Alarm.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/Alarm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="19" selection-start="487" selection-end="487" vertical-scroll-proportion="0.5263158">
+            <state line="16" column="19" selection-start="487" selection-end="487" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -101,13 +101,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DBHelper.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="DBHelper.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/example/DBHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="19" selection-start="1868" selection-end="1868" vertical-scroll-proportion="0.0">
+            <state line="59" column="45" selection-start="1621" selection-end="1621" vertical-scroll-proportion="0.29385966">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SQLiteDatabase.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/local/Android/android-sdk-macosx/platforms/android-16/android.jar!/android/database/sqlite/SQLiteDatabase.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="122" column="255" selection-start="6749" selection-end="6749" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -124,7 +133,7 @@
       <file leaf-file-name="StartupReceiver.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/StartupReceiver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="53" selection-start="532" selection-end="532" vertical-scroll-proportion="0.0">
+            <state line="18" column="78" selection-start="708" selection-end="708" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -132,10 +141,19 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="AlarmManager.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/local/Android/android-sdk-macosx/platforms/android-16/android.jar!/android/app/AlarmManager.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="16" selection-start="835" selection-end="835" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="ViewDataActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/ViewDataActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="19" selection-start="514" selection-end="514" vertical-scroll-proportion="0.0">
+            <state line="19" column="51" selection-start="552" selection-end="552" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -146,7 +164,7 @@
       <file leaf-file-name="view_data.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/layout/view_data.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="37" selection-start="249" selection-end="249" vertical-scroll-proportion="0.0">
+            <state line="10" column="38" selection-start="488" selection-end="488" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -164,15 +182,15 @@
       <list>
         <option value="$PROJECT_DIR$/src/com/example/MyActivity.java" />
         <option value="$PROJECT_DIR$/src/com/example/AlarmReceiver.java" />
-        <option value="$PROJECT_DIR$/src/com/example/DBHelper.java" />
         <option value="$PROJECT_DIR$/src/com/example/Alarm.java" />
         <option value="$PROJECT_DIR$/res/values/color.xml" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/src/com/example/StartupReceiver.java" />
         <option value="$PROJECT_DIR$/res/layout/log_level.xml" />
         <option value="$PROJECT_DIR$/src/com/example/LogLevelActivity.java" />
         <option value="$PROJECT_DIR$/src/com/example/ViewDataActivity.java" />
         <option value="$PROJECT_DIR$/res/layout/view_data.xml" />
+        <option value="$PROJECT_DIR$/src/com/example/StartupReceiver.java" />
+        <option value="$PROJECT_DIR$/src/com/example/DBHelper.java" />
       </list>
     </option>
   </component>
@@ -633,13 +651,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/local/Android/android-sdk-macosx/platforms/android-16/android.jar!/android/database/sqlite/SQLiteDatabase.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="122" column="35" selection-start="6529" selection-end="6529" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/local/Android/android-sdk-macosx/platforms/android-16/android.jar!/android/app/PendingIntent.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="28" selection-start="405" selection-end="405" vertical-scroll-proportion="0.33187774">
@@ -657,13 +668,6 @@
     <entry file="jar://$USER_HOME$/local/Android/android-sdk-macosx/platforms/android-16/android.jar!/android/content/Context.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="178" column="58" selection-start="8092" selection-end="8092" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/local/Android/android-sdk-macosx/platforms/android-16/android.jar!/android/app/AlarmManager.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="16" selection-start="717" selection-end="717" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -689,15 +693,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/DBHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="19" selection-start="1868" selection-end="1868" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/LogLevelActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="77" selection-start="829" selection-end="829" vertical-scroll-proportion="0.0">
@@ -705,18 +700,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/StartupReceiver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="53" selection-start="532" selection-end="532" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/ViewDataActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="19" selection-start="514" selection-end="514" vertical-scroll-proportion="0.0">
+        <state line="19" column="51" selection-start="552" selection-end="552" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -725,14 +711,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/view_data.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="37" selection-start="249" selection-end="249" vertical-scroll-proportion="0.0">
+        <state line="10" column="38" selection-start="488" selection-end="488" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/Alarm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="19" selection-start="487" selection-end="487" vertical-scroll-proportion="0.5263158">
+        <state line="16" column="19" selection-start="487" selection-end="487" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/local/Android/android-sdk-macosx/platforms/android-16/android.jar!/android/app/AlarmManager.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="16" selection-start="835" selection-end="835" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/StartupReceiver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="78" selection-start="708" selection-end="708" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/local/Android/android-sdk-macosx/platforms/android-16/android.jar!/android/database/sqlite/SQLiteDatabase.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="122" column="255" selection-start="6749" selection-end="6749" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/DBHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="45" selection-start="1621" selection-end="1621" vertical-scroll-proportion="0.29385966">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

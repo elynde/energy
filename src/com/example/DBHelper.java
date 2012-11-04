@@ -7,6 +7,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
 
@@ -56,15 +57,25 @@ public class DBHelper extends SQLiteOpenHelper {
                 new String[]{},
                 null,
                 null,
-                null
+                String.format("%s DESC", TIME)
         );
 
 
         String out = "";
-        SimpleDateFormat f = new SimpleDateFormat("MM/dd h:mm a", Locale.US);
+        SimpleDateFormat time_formatter = new SimpleDateFormat("h:mm a", Locale.US);
+        SimpleDateFormat year_formatter = new SimpleDateFormat("MM/dd", Locale.US);
+
+        int prev_date = -1;
         while (c.moveToNext()) {
-            Date d = new Date(c.getLong(0));
-            out += String.format("%s : %d\n", f.format(d), c.getInt(1));
+            Calendar cal = Calendar.getInstance();
+            cal.setTimeInMillis(c.getLong(0));
+
+            int cur_date = cal.get(Calendar.DATE);
+            if (cur_date != prev_date) {
+                out+= String.format("%s\n", year_formatter.format(cal.getTime()));
+                prev_date = cur_date;
+            }
+            out += String.format("%s : %d\n", time_formatter.format(cal.getTime()), c.getInt(1));
         }
 
 
