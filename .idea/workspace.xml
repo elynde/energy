@@ -101,10 +101,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DBHelper.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="DBHelper.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/DBHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="49" selection-start="2161" selection-end="2161" vertical-scroll-proportion="0.375">
+            <state line="74" column="49" selection-start="2161" selection-end="2161" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -130,10 +130,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StartupReceiver.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="StartupReceiver.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/example/StartupReceiver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="79" selection-start="709" selection-end="709" vertical-scroll-proportion="0.0">
+            <state line="15" column="52" selection-start="538" selection-end="538" vertical-scroll-proportion="0.49342105">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -189,8 +189,8 @@
         <option value="$PROJECT_DIR$/src/com/example/LogLevelActivity.java" />
         <option value="$PROJECT_DIR$/src/com/example/ViewDataActivity.java" />
         <option value="$PROJECT_DIR$/res/layout/view_data.xml" />
-        <option value="$PROJECT_DIR$/src/com/example/StartupReceiver.java" />
         <option value="$PROJECT_DIR$/src/com/example/DBHelper.java" />
+        <option value="$PROJECT_DIR$/src/com/example/StartupReceiver.java" />
       </list>
     </option>
   </component>
@@ -714,28 +714,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/Alarm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="19" selection-start="487" selection-end="487" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/LogLevelActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="77" selection-start="829" selection-end="829" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/StartupReceiver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="79" selection-start="709" selection-end="709" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -750,7 +732,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/DBHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="49" selection-start="2161" selection-end="2161" vertical-scroll-proportion="0.375">
+        <state line="74" column="49" selection-start="2161" selection-end="2161" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/Alarm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="19" selection-start="487" selection-end="487" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/StartupReceiver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="52" selection-start="538" selection-end="538" vertical-scroll-proportion="0.49342105">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
