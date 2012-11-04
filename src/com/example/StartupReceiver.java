@@ -16,5 +16,6 @@ public class StartupReceiver extends BroadcastReceiver {
         long next_hour = time - (time % 3600) + 3600;
         PendingIntent sender = PendingIntent.getBroadcast(c, 0, new Intent(c, Alarm.class), 0);
 
-        alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, next_hour * 1000, 60 * 60 * 1000, sender);    }
+        alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, next_hour * 1000, 60 * 60 * 1000, sender);
+    }
 }
