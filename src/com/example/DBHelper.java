@@ -17,6 +17,10 @@ public class DBHelper extends SQLiteOpenHelper {
     private static String TABLE_NAME = "energy_levels";
     private static String LEVEL = "level";
     private static String TIME = "log_time";
+    private static String YEAR = "year";
+    private static String MONTH = "month";
+    private static String DAY = "day";
+    private static String HOUR = "hour";
     private static int DB_VERSION = 1;
 
     public DBHelper(Context c) {
@@ -38,7 +42,7 @@ public class DBHelper extends SQLiteOpenHelper {
 
     public void logLevel(int level) {
         ContentValues c = new ContentValues();
-        c.put(TIME, System.currentTimeMillis());
+        c.put(TIME, System.currentTimeMillis()/1000);
         c.put(LEVEL, level);
 
         SQLiteDatabase db = getWritableDatabase();
