@@ -72,7 +72,7 @@ public class DBHelper extends SQLiteOpenHelper {
         int prev_date = -1;
         while (c.moveToNext()) {
             Calendar cal = Calendar.getInstance();
-            cal.setTimeInMillis(c.getLong(0));
+            cal.setTimeInMillis(c.getLong(0)*1000);
 
             int cur_date = cal.get(Calendar.DATE);
             if (cur_date != prev_date) {
