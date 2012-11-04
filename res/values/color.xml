@@ -1,0 +1,6 @@
+<resources>
+    <!-- Found here http://www.colourlovers.com/palette/949801/Traffic_Light -->
+    <color name="red">#FF5468</color>
+    <color name="green">#4DFA90</color>
+    <color name="slow_down">#FABE4D</color>
+</resources>
