@@ -17,6 +17,6 @@ public class ViewDataActivity extends Activity {
 
         String data = new DBHelper(this).getData();
 
-        ((TextView) findViewById(R.id.data)).setText(data);
+        ((TextView)findViewById(R.id.data)).setText(data);
     }
 }

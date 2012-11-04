@@ -16,22 +16,13 @@ public class LogLevelActivity extends Activity {
         ((Button)findViewById(R.id.level_1)).setOnClickListener(l);
         ((Button)findViewById(R.id.level_2)).setOnClickListener(l);
         ((Button)findViewById(R.id.level_3)).setOnClickListener(l);
-
-        /*((Button)findViewById(R.id.view_data_button)).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(LogLevelActivity.this, ViewDataActivity.class));
-            }
-        });*/
     }
 
     class ClickListener implements View.OnClickListener {
 
         @Override
         public void onClick(View view) {
-            String level_tag = ((Button)view).getTag().toString();
-            int level = Integer.parseInt(level_tag.substring(level_tag.length() - 1));
-
+            int level = Integer.parseInt(((Button)view).getTag().toString());
             new DBHelper(LogLevelActivity.this).logLevel(level);
 
             Toast.makeText(LogLevelActivity.this, "Logged successfully", Toast.LENGTH_LONG).show();

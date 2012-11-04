@@ -10,14 +10,11 @@ import android.util.Log;
 public class StartupReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context c, Intent intent) {
-
         AlarmManager alarmManager = (AlarmManager)c.getSystemService(c.ALARM_SERVICE);
 
         long time = System.currentTimeMillis()/1000;
         long last_hour = time - (time % 3600);
         PendingIntent sender = PendingIntent.getBroadcast(c, 0, new Intent(c, Alarm.class), 0);
 
-        Log.d("energy", Long.toString(last_hour));
-
-        alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, last_hour, 60 * 1000, sender);    }
+        alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, last_hour, 60 * 60 * 1000, sender);    }
 }

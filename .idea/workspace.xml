@@ -71,85 +71,88 @@
     <favorites_list name="energy" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="vertical" split-proportion="0.1">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="color.xml" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/res/values/color.xml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="3" column="43" selection-start="170" selection-end="170" vertical-scroll-proportion="2.142857">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="log_level.xml" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/res/layout/log_level.xml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="6" column="43" selection-start="309" selection-end="309" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="13" column="67" selection-start="795" selection-end="795" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Alarm.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/com/example/Alarm.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="16" column="19" selection-start="487" selection-end="487" vertical-scroll-proportion="0.0">
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="DBHelper.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/com/example/DBHelper.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="70" column="19" selection-start="1868" selection-end="1868" vertical-scroll-proportion="0.0">
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="LogLevelActivity.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/com/example/LogLevelActivity.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="31" column="28" selection-start="1070" selection-end="1070" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="StartupReceiver.java" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/com/example/StartupReceiver.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="18" column="49" selection-start="630" selection-end="630" vertical-scroll-proportion="0.60900474">
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="log_level.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/log_level.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="37" selection-start="410" selection-end="410" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="67" selection-start="795" selection-end="795" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Alarm.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/example/Alarm.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="19" selection-start="487" selection-end="487" vertical-scroll-proportion="0.5263158">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DBHelper.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/DBHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="70" column="19" selection-start="1868" selection-end="1868" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LogLevelActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/LogLevelActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="77" selection-start="829" selection-end="829" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StartupReceiver.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/StartupReceiver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="53" selection-start="532" selection-end="532" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ViewDataActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/ViewDataActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="19" selection-start="514" selection-end="514" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="view_data.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/view_data.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="37" selection-start="249" selection-end="249" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -160,16 +163,16 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/src/com/example/MyActivity.java" />
-        <option value="$PROJECT_DIR$/res/layout/view_data.xml" />
         <option value="$PROJECT_DIR$/src/com/example/AlarmReceiver.java" />
-        <option value="$PROJECT_DIR$/src/com/example/ViewDataActivity.java" />
         <option value="$PROJECT_DIR$/src/com/example/DBHelper.java" />
-        <option value="$PROJECT_DIR$/src/com/example/StartupReceiver.java" />
         <option value="$PROJECT_DIR$/src/com/example/Alarm.java" />
-        <option value="$PROJECT_DIR$/src/com/example/LogLevelActivity.java" />
         <option value="$PROJECT_DIR$/res/values/color.xml" />
-        <option value="$PROJECT_DIR$/res/layout/log_level.xml" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/src/com/example/StartupReceiver.java" />
+        <option value="$PROJECT_DIR$/res/layout/log_level.xml" />
+        <option value="$PROJECT_DIR$/src/com/example/LogLevelActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/example/ViewDataActivity.java" />
+        <option value="$PROJECT_DIR$/res/layout/view_data.xml" />
       </list>
     </option>
   </component>
@@ -637,13 +640,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/view_data.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="95" selection-start="308" selection-end="308" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/local/Android/android-sdk-macosx/platforms/android-16/android.jar!/android/app/PendingIntent.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="28" selection-start="405" selection-end="405" vertical-scroll-proportion="0.33187774">
@@ -665,15 +661,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/ViewDataActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="59" selection-start="554" selection-end="554" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/local/Android/android-sdk-macosx/platforms/android-16/android.jar!/android/app/AlarmManager.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="16" selection-start="717" selection-end="717" vertical-scroll-proportion="0.0">
@@ -688,13 +675,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/log_level.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="43" selection-start="309" selection-end="309" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="67" selection-start="795" selection-end="795" vertical-scroll-proportion="0.0">
@@ -702,12 +682,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/Alarm.java">
+    <entry file="file://$PROJECT_DIR$/res/layout/log_level.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="19" selection-start="487" selection-end="487" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="7" column="37" selection-start="410" selection-end="410" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -722,14 +700,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/LogLevelActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="28" selection-start="1070" selection-end="1070" vertical-scroll-proportion="0.0">
+        <state line="24" column="77" selection-start="829" selection-end="829" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/StartupReceiver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="49" selection-start="630" selection-end="630" vertical-scroll-proportion="0.60900474">
+        <state line="15" column="53" selection-start="532" selection-end="532" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/ViewDataActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="19" selection-start="514" selection-end="514" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/view_data.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="37" selection-start="249" selection-end="249" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/Alarm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="19" selection-start="487" selection-end="487" vertical-scroll-proportion="0.5263158">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
