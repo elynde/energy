@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="fill_parent"
-              android:layout_height="wrap_content"
-        android:orientation="vertical">
-    <ScrollView android:layout_width="fill_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:scrollbars="vertical"
-                android:fillViewport="true">
-        <TextView android:textSize="20sp" android:layout_width="fill_parent" android:layout_weight="1.0" android:id="@+id/data"
-                  android:layout_height="fill_parent"/>
-    </ScrollView>
-</RelativeLayout>
+                android:orientation="vertical">
+    <Button android:id="@+id/log_button" android:layout_height="wrap_content"
+            android:text="Log" android:layout_width="wrap_content" android:textSize="60sp"></Button>
+
+    <Button android:id="@+id/view_data_button" android:layout_height="wrap_content"
+            android:text="View Data" android:layout_width="wrap_content" android:textSize="20sp"></Button>
+</LinearLayout>

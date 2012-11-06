@@ -1,4 +1,4 @@
-package com.example;
+package com.energyapp;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -7,9 +7,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.Locale;
+import java.util.*;
 
 public class DBHelper extends SQLiteOpenHelper {
 
@@ -51,7 +49,7 @@ public class DBHelper extends SQLiteOpenHelper {
 
     }
 
-    public String getData() {
+    public ArrayList<LogEntry> getData() {
         SQLiteDatabase db = this.getReadableDatabase();
 
         Cursor c = db.query(
@@ -64,27 +62,29 @@ public class DBHelper extends SQLiteOpenHelper {
                 String.format("%s DESC", TIME)
         );
 
-
-        String out = "";
-        SimpleDateFormat time_formatter = new SimpleDateFormat("h:mm a", Locale.US);
-        SimpleDateFormat year_formatter = new SimpleDateFormat("MM/dd", Locale.US);
-
-        int prev_date = -1;
+        ArrayList<LogEntry> entries = new ArrayList<LogEntry>();
         while (c.moveToNext()) {
-            Calendar cal = Calendar.getInstance();
-            cal.setTimeInMillis(c.getLong(0)*1000);
-
-            int cur_date = cal.get(Calendar.DATE);
-            if (cur_date != prev_date) {
-                out+= String.format("%s\n", year_formatter.format(cal.getTime()));
-                prev_date = cur_date;
-            }
-            out += String.format("%s : %d\n", time_formatter.format(cal.getTime()), c.getInt(1));
+            entries.add(new LogEntry(c.getLong(0), c.getInt(1)));
         }
 
-
         db.close();
-        return out;
+        return entries;
+    }
+
+    public void updateEntry(long old_time, LogEntry e) {
+        SQLiteDatabase db = getWritableDatabase();
+
+        ContentValues c = new ContentValues();
+        c.put(TIME, e.getRawTime());
+        c.put(LEVEL, e.getLevel());
+        db.update(TABLE_NAME, c, String.format("%s = ?", TIME), new String[] { Long.toString(old_time) });
+        db.close();
+    }
+
+    public void deleteEntry(long old_time) {
+        SQLiteDatabase db = getWritableDatabase();
+        db.delete(TABLE_NAME, String.format("%s = ?", TIME), new String[] { Long.toString(old_time)});
+        db.close();
     }
 
     @Override

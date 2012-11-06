@@ -1,14 +1,9 @@
-package com.example;
+package com.energyapp;
 
-import android.app.AlarmManager;
-import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Vibrator;
-import android.util.Log;
-
-import java.util.Calendar;
 
 public class Alarm extends BroadcastReceiver {
     @Override
