@@ -40,7 +40,7 @@ public class DBHelper extends SQLiteOpenHelper {
 
     public void logLevel(int level) {
         ContentValues c = new ContentValues();
-        c.put(TIME, System.currentTimeMillis()/1000);
+        c.put(TIME, System.currentTimeMillis() / 1000);
         c.put(LEVEL, level);
 
         SQLiteDatabase db = getWritableDatabase();
@@ -77,14 +77,36 @@ public class DBHelper extends SQLiteOpenHelper {
         ContentValues c = new ContentValues();
         c.put(TIME, e.getRawTime());
         c.put(LEVEL, e.getLevel());
-        db.update(TABLE_NAME, c, String.format("%s = ?", TIME), new String[] { Long.toString(old_time) });
+        db.update(TABLE_NAME, c, String.format("%s = ?", TIME), new String[]{Long.toString(old_time)});
         db.close();
     }
 
     public void deleteEntry(long old_time) {
         SQLiteDatabase db = getWritableDatabase();
-        db.delete(TABLE_NAME, String.format("%s = ?", TIME), new String[] { Long.toString(old_time)});
+        db.delete(TABLE_NAME, String.format("%s = ?", TIME), new String[]{Long.toString(old_time)});
         db.close();
+    }
+
+    public ArrayList<LogEntry> getLevelsDuringPeriod(long start_time, long end_time) {
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        Cursor c = db.query(
+                TABLE_NAME,
+                new String[]{TIME, LEVEL},
+                String.format("%s >= ? AND %s < ?", TIME, TIME),
+                new String[]{ Long.toString(start_time), Long.toString(end_time) },
+                null,
+                null,
+                String.format("%s ASC", TIME)
+        );
+
+        ArrayList<LogEntry> entries = new ArrayList<LogEntry>();
+        while (c.moveToNext()) {
+            entries.add(new LogEntry(c.getLong(0), c.getInt(1)));
+        }
+
+        db.close();
+        return entries;
     }
 
     @Override

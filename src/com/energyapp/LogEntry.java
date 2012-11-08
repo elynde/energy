@@ -27,6 +27,10 @@ public class LogEntry implements Parcelable{
         return cal;
     }
 
+    public int getHour() {
+        return this.getTime().get(Calendar.HOUR_OF_DAY);
+    }
+
     public int getLevel() {
         return level;
     }

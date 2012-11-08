@@ -10,25 +10,29 @@
     <application android:label="@string/app_name" android:icon="@drawable/ic_launcher">
         <activity android:name="com.energyapp.LogLevelActivity"
                   android:label="What's your energy level?">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-            </intent-filter>
         </activity>
-        <activity android:name="com.energyapp.ViewDataActivity"
-                  android:label="@string/app_name" />
-        <activity android:name="com.energyapp.LogEntryActivity"
-                  android:label="@string/app_name" />
-        <activity android:name="com.energyapp.MainActivity"
-                  android:label="@string/app_name">
-        <intent-filter>
+        <activity android:name="com.energyapp.EnergyGraphView"
+                  android:label="@string/app_name" android:screenOrientation="landscape">
+            <!--<intent-filter>
             <action android:name="android.intent.action.MAIN"/>
             <category android:name="android.intent.category.LAUNCHER"/>
-        </intent-filter>
+            </intent-filter>-->
         </activity>
-        <receiver  android:process=":remote" android:name="com.energyapp.Alarm"></receiver>
+        <activity android:name="com.energyapp.ViewDataActivity"
+                  android:label="@string/app_name"/>
+        <activity android:name="com.energyapp.LogEntryActivity"
+                  android:label="@string/app_name"/>
+        <activity android:name="com.energyapp.MainActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <receiver android:process=":remote" android:name="com.energyapp.Alarm"></receiver>
         <receiver android:name="com.energyapp.StartupReceiver">
             <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
             </intent-filter>
         </receiver>
     </application>
