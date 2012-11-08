@@ -5,6 +5,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Pair;
 
 import java.text.SimpleDateFormat;
 import java.util.*;
@@ -94,7 +95,7 @@ public class DBHelper extends SQLiteOpenHelper {
                 TABLE_NAME,
                 new String[]{TIME, LEVEL},
                 String.format("%s >= ? AND %s < ?", TIME, TIME),
-                new String[]{ Long.toString(start_time), Long.toString(end_time) },
+                new String[]{Long.toString(start_time), Long.toString(end_time)},
                 null,
                 null,
                 String.format("%s ASC", TIME)
@@ -103,6 +104,27 @@ public class DBHelper extends SQLiteOpenHelper {
         ArrayList<LogEntry> entries = new ArrayList<LogEntry>();
         while (c.moveToNext()) {
             entries.add(new LogEntry(c.getLong(0), c.getInt(1)));
+        }
+
+        db.close();
+        return entries;
+    }
+
+    public ArrayList<Pair<Integer, Integer>> getAverageDay() {
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        Cursor c = db.rawQuery(
+                String.format(
+                        "SELECT strftime('%%H', datetime(%s, 'unixepoch', 'localtime')) as time_of_day, AVG(level) FROM %s GROUP BY time_of_day ORDER BY time_of_day ASC",
+                        TIME,
+                        TABLE_NAME
+                ),
+                new String[]{}
+        );
+
+        ArrayList<Pair<Integer, Integer>> entries = new ArrayList<Pair<Integer, Integer>>();
+        while (c.moveToNext()) {
+            entries.add(new Pair<Integer, Integer>(Integer.parseInt(c.getString(0)), c.getInt(1)));
         }
 
         db.close();
