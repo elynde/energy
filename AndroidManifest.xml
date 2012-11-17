@@ -8,24 +8,6 @@
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"></uses-permission>
     <uses-permission android:name="android.permission.VIBRATE"/>
     <application android:label="@string/app_name" android:icon="@drawable/ic_launcher">
-        <activity android:name="com.energyapp.LogLevelActivity"
-                  android:label="What's your energy level?">
-        </activity>
-        <activity android:name="com.energyapp.EnergyGraphView"
-                  android:label="@string/app_name" android:screenOrientation="landscape">
-            <!--<intent-filter>
-            <action android:name="android.intent.action.MAIN"/>
-            <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>-->
-        </activity>
-        <activity android:name="com.energyapp.ViewDataActivity"
-                  android:label="@string/app_name"/>
-        <activity android:name="com.energyapp.LogEntryActivity"
-                  android:label="@string/app_name"/>
-        <activity android:name="com.energyapp.GraphMenuActivity"
-                  android:label="@string/app_name"/>
-        <activity android:name="com.energyapp.AverageGraphView"
-                  android:label="@string/app_name"/>
         <activity android:name="com.energyapp.MainActivity"
                   android:label="@string/app_name">
             <intent-filter>
@@ -33,6 +15,18 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity android:name="com.energyapp.LogLevelActivity"
+                  android:label="What's your energy level?"/>
+        <activity android:name="com.energyapp.EnergyGraphView"
+                  android:label="@string/app_name" android:screenOrientation="landscape"/>
+        <activity android:name="com.energyapp.ViewDataActivity"
+                  android:label="@string/app_name"/>
+        <activity android:name="com.energyapp.LogEntryActivity"
+                  android:label="@string/app_name"/>
+        <activity android:name="com.energyapp.GraphMenuActivity"
+                  android:label="@string/app_name"/>
+        <activity android:name="com.energyapp.AverageGraphView"
+                  android:label="@string/app_name" android:screenOrientation="landscape"/>
         <receiver android:process=":remote" android:name="com.energyapp.Alarm"></receiver>
         <receiver android:name="com.energyapp.StartupReceiver">
             <intent-filter>
