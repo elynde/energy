@@ -44,7 +44,7 @@ public class EnergyGraphView extends Activity {
             @Override
             protected String formatLabel(double value, boolean isValueX) {
                 if (isValueX) {
-                    SimpleDateFormat f = new SimpleDateFormat("h a", Locale.US);
+                    SimpleDateFormat f = new SimpleDateFormat("h:m a", Locale.US);
                     return f.format(value * 1000);
                 }
 

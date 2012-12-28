@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.*;
-import com.example.R;
 
 import java.util.ArrayList;
 import java.util.List;

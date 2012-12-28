@@ -16,10 +16,6 @@ public class DBHelper extends SQLiteOpenHelper {
     private static String TABLE_NAME = "energy_levels";
     private static String LEVEL = "level";
     private static String TIME = "log_time";
-    private static String YEAR = "year";
-    private static String MONTH = "month";
-    private static String DAY = "day";
-    private static String HOUR = "hour";
     private static int DB_VERSION = 1;
 
     public DBHelper(Context c) {
@@ -110,28 +106,48 @@ public class DBHelper extends SQLiteOpenHelper {
         return entries;
     }
 
-    public ArrayList<Pair<Integer, Integer>> getAverageDay() {
+    public ArrayList<Pair<Double, Double>> getAverageDay() {
         SQLiteDatabase db = this.getReadableDatabase();
 
         Cursor c = db.rawQuery(
-                String.format(
-                        "SELECT strftime('%%H', datetime(%s, 'unixepoch', 'localtime')) as time_of_day, AVG(level) FROM %s GROUP BY time_of_day ORDER BY time_of_day ASC",
-                        TIME,
-                        TABLE_NAME
-                ),
-                new String[]{}
+        "SELECT strftime('%H', dt) + ROUND(strftime('%M', dt) / 60.0) AS time_of_day, AVG(level) as avg_level\n" +
+                "FROM (\n" +
+                "  SELECT datetime(log_time, 'unixepoch', 'localtime') AS dt, level FROM energy_levels\n" +
+                "  WHERE dt < datetime('2012-12-02') -- when I started looking at average graphs\n" +
+                ") GROUP BY time_of_day\n" +
+                "ORDER BY time_of_day ASC",
+                null
         );
 
-        ArrayList<Pair<Integer, Integer>> entries = new ArrayList<Pair<Integer, Integer>>();
+        ArrayList<Pair<Double, Double>> entries = new ArrayList<Pair<Double, Double>>();
+
+        TreeMap<Double, Double> hours_to_levels = new TreeMap<Double, Double>();
         while (c.moveToNext()) {
-            entries.add(new Pair<Integer, Integer>(Integer.parseInt(c.getString(0)), c.getInt(1)));
+            double hour = c.getDouble(0);
+            double avg_level = c.getDouble(1);
+
+            // Not usually up, data is noise
+            if (hour > 1 && hour < 8) {
+                continue;
+            }
+
+            hour -= 8;
+
+            if (hour < 0) {
+                hour += 24;
+            }
+
+            hours_to_levels.put(hour, avg_level);
         }
 
+        for (double key: hours_to_levels.keySet()) {
+          entries.add(new Pair<Double, Double>(key, hours_to_levels.get(key)));
+        }
         db.close();
+
         return entries;
     }
 
     @Override
-    public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
-    }
+    public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {}
 }

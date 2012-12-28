@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.*;
-import com.example.R;
 
 import java.util.Calendar;
 import java.util.Date;
